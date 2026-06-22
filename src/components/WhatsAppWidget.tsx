@@ -12,10 +12,10 @@ export default function WhatsAppWidget() {
       transition={{ duration: 0.5, delay: 1.5 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-8 right-8 z-[100] whatsapp-pulse bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl"
+      className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-[100] whatsapp-pulse bg-green-500 text-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-2xl"
       aria-label="Chat on WhatsApp"
     >
-      <FaWhatsapp size={30} />
+      <FaWhatsapp className="w-5 h-5 sm:w-[30px] sm:h-[30px]" />
     </motion.a>
   )
 }
